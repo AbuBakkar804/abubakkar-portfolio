@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563EB;
+  --color-secondary: #38BDF8;
+  --color-accent: #00E5FF;
+  --color-bgdark: #050816;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: #050816;
+  color: #e7ecff;
+  font-family: var(--font-body);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#2563EB, #00E5FF);
+  border-radius: 8px;
+}
+
+.light body, body.light {
+  background: #f4f7ff;
+  color: #0b1330;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #2563EB, #38BDF8, #00E5FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(15, 23, 55, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.glow-border {
+  box-shadow: 0 0 0 1px rgba(0, 229, 255, 0.15), 0 0 30px rgba(37, 99, 235, 0.15);
+}
+
+.section-padding {
+  padding: 6rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 4rem;
+  }
+}
+
+.cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-radius: 9999px;
+  mix-blend-mode: difference;
+}
