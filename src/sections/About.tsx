@@ -36,26 +36,28 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.7 }}
-          className="relative"
+          className="flex justify-center lg:justify-start"
         >
-          <div className="relative rounded-3xl glass glow-border p-1 overflow-hidden">
-            <div className="aspect-square rounded-3xl overflow-hidden relative bg-gradient-to-br from-[#2563EB]/30 via-[#050816] to-[#00E5FF]/20">
-              <img
-                src={profilePhoto}
-                alt="Abu Bakkar"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 ring-1 ring-inset ring-[#00E5FF]/20 rounded-3xl" />
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+            <div className="relative rounded-full glass glow-border p-1.5 overflow-hidden w-full h-full">
+              <div className="w-full h-full rounded-full overflow-hidden relative bg-gradient-to-br from-[#2563EB]/30 via-[#050816] to-[#00E5FF]/20">
+                <img
+                  src={profilePhoto}
+                  alt="Abu Bakkar"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-[#00E5FF]/20" />
+              </div>
             </div>
+            <motion.div
+              animate={{ y: [0, -12, 0] }}
+              transition={{ repeat: Infinity, duration: 4 }}
+              className="absolute -bottom-4 -right-4 glass glow-border rounded-2xl px-5 py-4"
+            >
+              <p className="text-2xl font-bold text-gradient">4th</p>
+              <p className="text-xs text-slate-400">Semester</p>
+            </motion.div>
           </div>
-          <motion.div
-            animate={{ y: [0, -12, 0] }}
-            transition={{ repeat: Infinity, duration: 4 }}
-            className="absolute -bottom-6 -right-6 glass glow-border rounded-2xl px-5 py-4"
-          >
-            <p className="text-2xl font-bold text-gradient">4th</p>
-            <p className="text-xs text-slate-400">Semester</p>
-          </motion.div>
         </motion.div>
 
         <div>
