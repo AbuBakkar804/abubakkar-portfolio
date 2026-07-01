@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiTarget, FiBookOpen } from 'react-icons/fi'
 import { PROFILE } from '@/constants/data'
+import profilePhoto from '@/assets/profile.jpeg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -38,8 +39,13 @@ export default function About() {
           className="relative"
         >
           <div className="relative rounded-3xl glass glow-border p-1 overflow-hidden">
-            <div className="aspect-square rounded-3xl bg-gradient-to-br from-[#2563EB]/30 via-[#050816] to-[#00E5FF]/20 flex items-center justify-center text-8xl font-bold text-gradient font-[var(--font-display)]">
-              AB
+            <div className="aspect-square rounded-3xl overflow-hidden relative bg-gradient-to-br from-[#2563EB]/30 via-[#050816] to-[#00E5FF]/20">
+              <img
+                src={profilePhoto}
+                alt="Abu Bakkar"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 ring-1 ring-inset ring-[#00E5FF]/20 rounded-3xl" />
             </div>
           </div>
           <motion.div
