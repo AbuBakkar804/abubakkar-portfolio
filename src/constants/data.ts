@@ -7,7 +7,7 @@ export const PROFILE = {
     'Computer Science Student',
     'Generative AI Learner',
   ],
-  location: 'Mardan, Pakistan',
+  location: 'Rawalpindi, Pakistan',
   email: 'abubakkar735037@gmail.com',
   phone: '+92 328 5322360',
   github: 'https://github.com/AbuBakkar804',
@@ -18,6 +18,8 @@ export const PROFILE = {
     degree: 'BS Computer Science',
     university: 'University of Engineering and Technology (UET) Mardan',
     semester: '4th Semester',
+    cgpa: '2.62',
+    years: '2024 – 2028',
   },
   goal: 'Become an AI Engineer specializing in Machine Learning, Deep Learning, NLP, Computer Vision, and Generative AI while building impactful real-world software solutions.',
 }
@@ -169,6 +171,17 @@ export const PROJECTS: Project[] = [
     gradient: 'from-blue-400 via-sky-500 to-cyan-500',
   },
   {
+    id: 'cvat-annotation',
+    title: 'CVAT Data Annotation Project',
+    description:
+      'Annotated image datasets using CVAT for machine learning training, creating bounding boxes and labeled datasets for computer vision tasks.',
+    tech: ['CVAT', 'Computer Vision', 'Data Labeling'],
+    features: ['Bounding Boxes', 'Image Labeling', 'Dataset Preparation', 'Computer Vision Training Data'],
+    status: 'Completed',
+    timeline: '2025',
+    gradient: 'from-blue-500 via-cyan-500 to-teal-400',
+  },
+  {
     id: 'atm-bank-management',
     title: 'ATM Bank Management System',
     description: 'An object-oriented C++ console application simulating core ATM and bank management operations.',
@@ -232,10 +245,16 @@ export const SERVICES = [
 
 export const EXPERIENCE = [
   {
-    role: 'Generative AI Beginner (Intern)',
-    company: 'Zoobi Apps and Games Technology',
+    role: 'AI Intern',
+    company: 'Zoobi Apps & Games Technology',
     period: '2025',
-    desc: 'Gaining hands-on experience with generative AI concepts and applications in a professional environment.',
+    desc: 'Worked on AI/ML dataset preparation and annotation tasks, learned generative AI workflows and training data organization, and assisted in AI-related experimentation and data handling.',
+  },
+  {
+    role: 'Software / AI Intern',
+    company: 'AI Nova Apps',
+    period: '2025',
+    desc: 'Assisted in Python-based AI development tasks, worked on data preprocessing and machine learning workflows, and supported testing and development of AI applications.',
   },
 ]
 
